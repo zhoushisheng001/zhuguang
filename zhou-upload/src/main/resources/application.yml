@@ -1,0 +1,20 @@
+server:
+  port: 8082
+spring:
+  application:
+    name: zhou-upload
+  servlet:
+    multipart:
+      max-file-size: 5MB # 限制文件上传的大小
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:10086/eureka/
+fdfs:
+  so-timeout: 1501
+  connect-timeout: 601
+  thumb-image: # 缩略图
+    width: 60
+    height: 60
+  tracker-list: # tracker地址
+    - 192.168.56.101:22122

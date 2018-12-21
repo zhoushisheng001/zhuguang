@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/item-parent" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/item-parent/item-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/item-parent/item-client" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/item-parent/item-privote" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zhou-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zhou-gateway" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zhou-registry" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zhou-upload" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

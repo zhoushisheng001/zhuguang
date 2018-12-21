@@ -1,0 +1,30 @@
+server:
+  port: 10010
+spring:
+  application:
+    name: zhou-gateway
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:10086/eureka/
+zuul:
+  prefix: /api  #添加路由前缀
+  routes:
+    item-server: /item/**
+    zhou-upload:
+      path: /upload/**
+      serviceId: zhou-upload
+      strip-prefix: false  # 这样就能做到去除upload 就是在访问的时候需要配对应/upload 但是不会去除upload访问微服务的路径
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMillisecond: 5000 # 熔断超时时长：10000ms
+ribbon:
+  ConnectTimeout: 250 # 连接超时时间(ms)
+  ReadTimeout: 2000 # 通信超时时间(ms)
+  MaxAutoRetries: 0 # 同一实例的重试次数
+  MaxAutoRetriesNextServer: 0 # 同一服务不同实例的重试次数
+

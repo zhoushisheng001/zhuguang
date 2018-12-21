@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: zhou-registry
+server:
+  port: 10086
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:10086/eureka/
+    register-with-eureka: false #表明是服务端不会去取别的服务和注册
+    fetch-registry: false
