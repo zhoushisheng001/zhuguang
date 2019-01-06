@@ -17,4 +17,11 @@ fdfs:
     width: 60
     height: 60
   tracker-list: # tracker地址
-    - 192.168.56.101:22122
+    - 192.168.1.131:22122
+zhou:
+  upload:
+    baseUrl: http://image.zhou.com/
+    suffixes:
+      - image/png
+      - image/jpeg
+      - image/jpg

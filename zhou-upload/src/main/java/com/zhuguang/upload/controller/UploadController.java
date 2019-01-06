@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
 @RestController
-@RequestMapping("upload")
+@RequestMapping("/upload")
 public class UploadController {
 
     @Autowired
@@ -23,7 +23,7 @@ public class UploadController {
      * @param file
      * @return
      */
-    @PostMapping("image")
+    @PostMapping("/image")
     public ResponseEntity<String> uploadImage(@RequestParam("file") MultipartFile file) {
         String url = this.uploadService.upload(file);
         if (StringUtils.isBlank(url)) {
