@@ -7,6 +7,9 @@ spring:
     url: jdbc:mysql://localhost:3306/test
     username: root
     password: root
+  output:
+    ansi:
+      enabled: detect
 eureka:
   client:
     service-url:

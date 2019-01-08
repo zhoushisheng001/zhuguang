@@ -10,6 +10,9 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:10086/eureka/
+  instance:  #保证IP不会被修改
+    ip-address: 127.0.0.1
+    prefer-ip-address: true
 fdfs:
   so-timeout: 1501
   connect-timeout: 601
